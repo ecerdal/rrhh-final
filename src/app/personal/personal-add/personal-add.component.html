@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="d-flex justify-content-start">
+        <h4>Agregar personal</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" [(ngModel)]="personal.apellidos">
+            </div>
+            <div class="mb-3">
+                <label for="nombres" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="nombres" [(ngModel)]="personal.nombre">
+            </div>
+            <div class="mb-3">
+                <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento</label>
+                <input type="date" class="form-control" id="fecha_nacimiento" [(ngModel)]="personal.fecha_nacimiento">
+            </div>
+            <div class="mb-3">
+                <label for="salud" class="form-label">Fondo de salud</label>
+                <select class="form-control" name="salud" id="salud" [(ngModel)]="personal.id_salud">
+                    <option value="0">-- Seleccione</option>
+                    <option value="1">Fonasa</option>
+                    <option value="2">Colmena</option>
+                    <option value="3">Banmedica</option>
+                    <option value="4">Consalud</option>
+                    <option value="5">Otro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="prevision" class="form-label">Fondo de Prevision</label>
+                <select class="form-control" name="prevision" id="prevision" [(ngModel)]="personal.id_prevision">
+                    <option value="0">-- Seleccione</option>
+                    <option value="1">Cuprum</option>
+                    <option value="2">Modelo</option>
+                    <option value="3">Provida</option>
+                    <option value="4">Otro</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="cargas" class="form-label">N° de Cargas</label>
+                <input type="number" class="form-control" id="cargas" [(ngModel)]="personal.cargas">
+            </div>
+            <div class="mb-3">
+                <label for="cargo" class="form-label">Cargo</label>
+                <select class="form-control" name="cargo" id="cargo" [(ngModel)]="personal.id_cargo">
+                    <option value="0">-- Seleccione</option>
+                    <option value="1">Gerente</option>
+                    <option value="2">Jefatura</option>
+                    <option value="3">Administrativo</option>
+                    <option value="4">Obrero</option>
+                </select>
+            </div>
+            <button class="btn btn-success" (click)="save()"><i class="fas fa-save"></i> Guardar</button>
+        </div>
+    </div>
+</div>

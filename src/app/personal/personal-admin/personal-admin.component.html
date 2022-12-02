@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-success" routerLink="/personal/add"><i class="fas fa-plus"></i> Agregar</button>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Apellidos</th>
+                        <th>Nombres</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of personals">
+                        <td>{{p.apellidos}}</td>
+                        <td>{{p.nombre}}</td>
+                        <td>
+                            <button class="btn mx-2 btn-warning" routerLink="/personal/edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn mx-2 btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

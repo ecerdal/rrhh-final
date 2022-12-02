@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="d-flex justify-content-start">
+        <h4>Editar Cargo</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" [(ngModel)]="cargo.apellidos">
+            </div>
+            <div class="mb-3">
+                <label for="nombres" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="nombres" [(ngModel)]="cargo.nombres">
+            </div>
+            <div class="mb-3">
+                <label for="sueldo_base" class="form-label">Sueldo Base</label>
+                <input type="number" class="form-control" id="sueldo_base" [(ngModel)]="cargo.sueldo_base">
+            </div>
+            <button class="btn btn-success" (click)="save()"><i class="fas fa-save"></i> Guardar</button>
+        </div>
+    </div>
+</div>

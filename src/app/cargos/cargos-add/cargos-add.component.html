@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="d-flex justify-content-start">
+        <h4>Agregar Cargo</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label for="nombres" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombres" [(ngModel)]="cargo.nombre">
+            </div>
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripcion</label>
+                <input type="text" class="form-control" id="descripcion" [(ngModel)]="cargo.descripcion">
+            </div>
+            <div class="mb-3">
+                <label for="sueldo_base" class="form-label">Sueldo Base</label>
+                <input type="number" class="form-control" id="sueldo_base" [(ngModel)]="cargo.sueldo_base">
+            </div>
+            <button class="btn btn-success" (click)="save()"><i class="fas fa-save"></i> Guardar</button>
+        </div>
+    </div>
+</div>
+

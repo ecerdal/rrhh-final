@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="d-flex justify-content-end">
+        <button class="btn btn-success" routerLink="/cargos/add"><i class="fas fa-plus"></i> Agregar</button>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Sueldo Base</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let c of cargos">
+                        <td>{{c.nombre}}</td>
+                        <td>{{c.sueldo_base}}</td>
+                        <td>420000</td>
+                        <td>
+                            <button class="btn mx-2 btn-warning" routerLink="/cargos/edit"><i class="fa-solid fa-pencil"></i></button>
+                            <button class="btn mx-2 btn-danger"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
